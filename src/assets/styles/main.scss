@@ -1,0 +1,218 @@
+.main-container__curs{
+  width: calc(100% - 2rem);
+  height: 2.1875rem;
+  background: #F9F9F9;
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.375rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 1rem;
+  justify-content: space-between;
+  .curs-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    &__usd{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      p{
+        margin-left: 0.5rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: #2B2B2B;
+      }
+    }
+    &__eur{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 1rem;
+      p{
+        margin-left: 0.5rem;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 0.75rem;
+        color: #2B2B2B;
+      }
+    }
+  }
+}
+
+.curs-date{
+  font-weight: 500;
+  font-size: 0.75rem;
+  color: #2B2B2B;
+}
+
+.main-news__container{
+  margin-top: 1rem;
+  width: calc(100% - 2rem);
+  padding: 1rem;
+  background: #F9F9F9;
+  box-shadow: inset 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0.375rem;
+}
+
+.main-news__item{
+  color: #1672C8;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 0.2rem;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+.main-page__section-title{
+  font-size: 1.2rem;
+  margin: 0;
+  margin-top:1rem;
+}
+
+.all-news__container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  justify-content: space-between;
+
+  &-item{
+    width: 16.625rem;
+    height: 11.8125rem;
+    background: #F9F9F9;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+    transition: 0.2s;
+    position: relative;
+    margin-bottom: 0.9rem;
+
+    &:hover{
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+      transition: 0.2s;
+    }
+    img{
+      border-radius: 0.5rem 0.5rem 0 0;
+      height: 60%;
+      width: 100%;
+
+    }
+    .news-title{
+      margin-left: 0.5rem;
+      color: #2B2B2B;
+      font-weight: 500;
+      white-space: nowrap; /* Отменяем перенос текста */
+      overflow: hidden; /* Обрезаем содержимое */
+      text-overflow: ellipsis; /* Многоточие */
+
+    }
+    .news-date{
+      width: 96%;
+      text-align: right;
+      margin-top: 2rem;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 0.75rem;
+      position: absolute;
+      bottom: 0.5rem;
+      right: 0.5rem;
+
+
+
+      color: #CDCDCD;
+    }
+
+  }
+}
+
+.news-background{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.75);
+  top: -120%;
+  left: 0;
+  display: flex;
+
+  transition: 0.5s;
+  z-index: 100;
+  cursor: default;
+  .news-full__container{
+    padding: 1rem 0.5rem;
+    overflow-y: auto;
+    width: calc(54.5625rem - 1rem);
+    margin: 0 auto;
+    height: 100vh;
+    background: #FFFFFF;
+    position: relative;
+    .close-full__news-btn{
+      position: absolute;
+      right: 1rem;
+      top: 1rem;
+      width: 1.5rem;
+      height: 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: 0.2s;
+      &:hover{
+        transition: 0.2s;
+        transform: scale(1.2);
+      }
+      &__item{
+        position: absolute;
+        width: 1.5rem;
+        height: 0.2rem;
+        background: #2B2B2B;
+        border-radius: 10em;
+        &:first-child{
+          transform: rotate(45deg);
+        }
+        &:last-child{
+          transform: rotate(-45deg);
+        }
+      }
+    }
+
+  }
+}
+
+.top-info-block{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  p{
+    color: #CDCDCD;
+    font-weight: 500;
+  }
+}
+
+.full-news{
+  &__title{
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: #2B2B2B;
+    margin-top: 1rem;
+  }
+  &__img{
+    width: 100%;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+  }
+  &__description{
+    font-size: 1.4rem;
+    color: #2B2B2B;
+    margin-top: 1rem;
+    text-align: justify;
+    padding-bottom: 3rem;
+  }
+
+}
+
+

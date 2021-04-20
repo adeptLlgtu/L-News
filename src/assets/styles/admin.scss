@@ -1,0 +1,227 @@
+.tumblers{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .button{
+    border: 0;
+    outline: none;
+    background: #F8F8F8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    padding: 0.25rem 0.75rem;
+    font-family: Montserrat;
+    color: #000;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+      transition: 0.2s;
+      box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+  .active-button{
+    background: #00C2FF;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 500;
+    &:hover{
+      transition: 0.2s;
+      box-shadow: inset 0px 5px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.category{
+  display: none;
+  flex-direction: column;
+}
+
+.search-block{
+  position: absolute;
+  right: 0;
+  border: 0;
+  input{
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    border: 0;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    top: -20%;
+    border-bottom: 1px solid #CCCCCC;
+    box-shadow: none;
+    border-radius: 0;
+    background: transparent;
+  }
+  img{
+    z-index: 2;
+    margin-right: 0.5rem;
+    cursor: pointer;
+    transition: 0.2s;
+    &:hover{
+      transition: 0.2s;
+      transform: scale(1.1);
+    }
+  }
+}
+
+input::-webkit-input-placeholder {
+  font-family: Montserrat;
+}
+
+h2{
+  color: #2B2B2B;
+}
+
+.place-table{
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  td{
+    width: 9.7rem;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 20px;
+    color: #00C2FF;
+    &:first-child{
+      text-align: left;
+    }
+    &:nth-child(1){
+      width: 12.7rem;
+    }
+    &:nth-child(2){
+      width: 7rem;
+      text-align: center;
+    }
+    &:nth-child(3){
+      width: 7rem;
+      text-align: center;
+    }
+  }
+}
+
+.generate-table{
+  display: flex;
+  flex-direction: row;
+  height: 3rem;
+  align-items: center;
+
+  td{
+    width: 10rem;
+    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.0625rem;
+    line-height: 20px;
+    color: #2B2B2B;
+    &:first-child{
+
+      text-align: left;
+    }
+    &:nth-child(1){
+      width: 13rem;
+
+    }
+    &:nth-child(2){
+      width: 7rem;
+      text-align: center;
+
+    }
+    &:nth-child(3){
+      width: 7rem;
+      text-align: center;
+    }
+    &:nth-child(4){
+      width: 3rem;
+      text-align: center;
+    }
+  }
+
+
+}
+
+form{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #CDCDCD;
+  transition: 0.3s;
+  &:hover{
+    transition: 0.3s;
+    background: rgba(205, 205, 205, 0.4);
+  }
+  button{
+    width: 7rem;
+    border-radius: 3px;
+    border: 0;
+    color: #FFFFFF;
+    cursor: pointer;
+    height: 1.5rem;
+    font-family: Montserrat;
+
+    transition: 0.3s;
+    &:hover{
+      transition: 0.3s;
+    }
+
+  }
+
+  .del-user{
+    background: #EF8080;
+    margin-left: 4rem;
+    &:hover{
+      background: #FA5454;
+    }
+  }
+  .save-user{
+    margin-left: 0.3rem;
+    background: #93CA8A;
+    &:hover{
+      background: #4BD435;
+    }
+  }
+  .form-input{
+    border-radius: 0;
+    box-shadow: none;
+    font-weight: 500;
+    width: 5rem;
+    font-family: Montserrat;
+    background: transparent;
+
+  }
+  padding: 0;
+  .generate-table{
+    td{
+      &:nth-child(5){
+        width: 6rem;
+      }
+      &:nth-child(6){
+        width: 6rem;
+      }
+    }
+  }
+}
+
+.nick-td{
+  transition: 0.4s;
+}
+
+.active-td{
+  transition: 0.4s;
+  color: #FC8585 !important;
+}
+
+.input{
+  &-1{
+    width: 10rem !important;
+  }
+  &-4{
+    width: 3rem;
+  }
+}
+
+
+

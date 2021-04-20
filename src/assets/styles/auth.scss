@@ -1,0 +1,153 @@
+.auth{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &-redirect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    img{
+      margin-bottom: 1.125rem;
+    }
+    p{
+      font-weight: 600;
+      color: #000;
+      font-size: 1.4375rem;
+      span{
+        color: #FFF;
+      }
+    }
+    &__button{
+      width: 15rem;
+      height: 2.8125rem;
+      margin-top: 2.5rem;
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 0.3125rem;
+      display: flex;
+      align-items: center;
+      a{
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.25rem;
+        padding: 0 0.7rem;
+        color: #2B2B2B;
+
+        &:hover{
+
+          transform: scale(1.05);
+        }
+      }
+      &-line{
+        height: 100%;
+        width: 1px;
+        background: rgba(196, 196, 196, 0.39);
+      }
+    }
+
+    //Регистрация
+    form{
+      width: calc(23.4375rem - 3.5rem);
+
+      background: #FFFFFF;
+      border-radius: 5px;
+      padding: 1.125rem 1.75rem;
+      margin-top: 1.5rem;
+      position: relative;
+      h2{
+        font-weight: 600;
+        text-align: center;
+        color: #2B2B2B;
+        margin-bottom: 1rem;
+      }
+      .input-item{
+        display: flex;
+        flex-direction: column;
+        label{
+          font-weight: 500;
+          margin-bottom: 0.3rem;
+          text-align: left;
+          span{
+            color: #FC8585;
+          }
+        }
+        input{
+          background: #FAFAFA;
+          box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 5px;
+          border: 0;
+          height: 2rem;
+          padding: 0 1rem;
+          outline: none;
+          margin-bottom: 1.5rem;
+        }
+        #age{
+          width: 3rem;
+        }
+
+      }
+      .button-container{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+      }
+      button{
+        background: #F9F9F9;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        padding: 0.4375rem 1.6875rem;
+        font-weight: 600;
+        color: #2B2B2B;
+        border: none;
+        cursor: pointer;
+        transition: 0.2s;
+        font-family: Montserrat;
+        &:hover{
+          transition: 0.2s;
+          box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.25);
+        }
+      }
+      #description-reg{
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        span{
+          color: #FC8585;
+        }
+      }
+      .lock-auth__form{
+        position: absolute;
+        top: 0.5rem;
+        right: 0.5rem;
+
+
+        &-item{
+          width: 1.3rem;
+          height: 0.1rem;
+          background: #2B2B2B;
+          position: absolute;
+          right: 0;
+          top: 0.5rem;
+          border-radius: 10em;
+          transition: 0.1s;
+          &:first-child{
+            transform: rotate(45deg);
+          }
+          &:last-child{
+            transform: rotate(-45deg);
+          }
+
+        }
+
+      }
+    }
+
+
+  }
+
+}

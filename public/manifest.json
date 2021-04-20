@@ -1,0 +1,15 @@
+{
+  "short_name": "L-Новости",
+  "name": "Липецкие новости",
+  "icons": [
+    {
+      "src": "lip_logo.svg",
+      "sizes": "73x73",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
